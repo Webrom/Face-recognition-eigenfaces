@@ -1,5 +1,4 @@
 function [ vecteur ] = ImageToVector( image )
-vecteur = image(:);
-vecteur = vecteur';
+vecteur = image(:)';
 end
 
