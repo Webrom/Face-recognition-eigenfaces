@@ -13,7 +13,7 @@ T_normal = Normalisation(T,mean_result,std_result);
 eigenfaces = AnalyseComposantePrincipale(T_normal);
 dlmwrite('./Data/eigenfaces.txt',eigenfaces);
 %disp(size(eigenfaces));
-matriceDescripteurs = getMatriceDescripteurs(T_normal,eigenfaces);
+matriceDescripteurs = Projection(T_normal,eigenfaces);
 dlmwrite('./Data/matriceDescripteurs.txt',matriceDescripteurs);
 %disp(size(matriceDescripteurs));
 end
