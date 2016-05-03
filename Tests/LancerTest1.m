@@ -15,7 +15,8 @@ function LancerTest1()
     [indexImage] = decision(projection,dlmread('./Data/matriceDescripteurs.txt'));
     disp('Index Image');
     disp(indexImage);
-    folderResultNumber = ceil(indexImage/3);
+    classesFolder = dlmread('./Data/classesFolder.txt');
+    folderResultNumber = classesFolder(indexImage);
     v3 = num2str(folderResultNumber);
     imageResultPath = strcat(path,v3,'/1.pgm');
     imgBase = chargerImage(imagePath,0);

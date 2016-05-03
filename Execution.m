@@ -6,7 +6,9 @@ addpath('./Tests');
 %Apprentissage
 %Enlever le commentaire pour relancer l'apprentissage, tous les paramètres
 %se règlent dans LancerApprentissage.m
-%LancerApprentissage();
+%LancerApprentissage(2);
 
 %Test
-LancerTest1();
+%LancerTest1();
+
+getAccuracy()

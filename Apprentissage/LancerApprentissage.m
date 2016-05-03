@@ -1,5 +1,7 @@
-function LancerApprentissage()
-T = GenerateT('/Users/Romain/CloudStation/ENSSAT/2A/AnalyseImage_2emePartie/Face-recognition-eigenfaces/att_faces/s',40,3);
+function LancerApprentissage(nbPhotosParClasse)
+[T,classesFolder,imgAnalyse] = GenerateT('/Users/Romain/CloudStation/ENSSAT/2A/AnalyseImage_2emePartie/Face-recognition-eigenfaces/att_faces/s',40,nbPhotosParClasse,10);
+dlmwrite('./Data/classesFolder.txt',classesFolder);
+dlmwrite('./Data/imgAnalyse.txt',imgAnalyse);
 [mean_result,std_result] = meanAndstd(T);
 %disp(size(mean_result));
 %disp(size(std_result));
@@ -12,9 +14,8 @@ T_normal = Normalisation(T,mean_result,std_result);
 %disp(size(T_normal));
 eigenfaces = AnalyseComposantePrincipale(T_normal);
 dlmwrite('./Data/eigenfaces.txt',eigenfaces);
-disp(size(eigenfaces));
+%disp(size(eigenfaces));
 matriceDescripteurs = Projection(T_normal,eigenfaces);
 dlmwrite('./Data/matriceDescripteurs.txt',matriceDescripteurs);
 %disp(size(matriceDescripteurs));
 end
-
