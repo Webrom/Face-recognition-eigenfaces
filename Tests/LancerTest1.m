@@ -1,5 +1,5 @@
 function LancerTest1()
-    folderNumber = 8;
+    folderNumber = 23;
     imgNumber = 6;
     path = '/Users/Romain/CloudStation/ENSSAT/2A/AnalyseImage_2emePartie/Face-recognition-eigenfaces/att_faces/s';
     v1 = num2str(folderNumber);
