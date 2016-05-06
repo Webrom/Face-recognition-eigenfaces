@@ -11,7 +11,7 @@ addpath('./Tests');
 %chaque dossier)
 %Environ 20 secondes d'éxécution
 %*****************************
-LancerApprentissage(2);
+%LancerApprentissage(1);
 %*****************************
 
 %NOTE : Pour afficher les Eigenfaces ou le lambda, enlever les commentaires
@@ -22,7 +22,7 @@ LancerApprentissage(2);
 %La base d'apprentissage doit être éxécuter avant.
 %Enlever le commentaire pour éxécuter (environ 5 secondes).
 %*****************************
-LancerTest1();
+%LancerTest1();
 %*****************************
 
 %Permet de tester et d'obtenir le pourcentage de réussite pour 1, 2, 3,

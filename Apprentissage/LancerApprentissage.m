@@ -14,7 +14,7 @@ function LancerApprentissage(nbPhotosParClasse)
 %je souhaite connaitre pour la personne 4, je regarde imgAnalyse(3) et
 %j'obtient les images analysées dans la base.
 
-[T,classesFolder,imgAnalyse] = GenerateT('/Users/Romain/CloudStation/ENSSAT/2A/AnalyseImage_2emePartie/Face-recognition-eigenfaces/att_faces/s',40,nbPhotosParClasse,10);
+[T,classesFolder,imgAnalyse] = GenerateT('./att_faces/s',40,nbPhotosParClasse,10);
 
 %Enregistrements dans le disque de ces valeurs (utilisée pour les tests)
 %******************************************************

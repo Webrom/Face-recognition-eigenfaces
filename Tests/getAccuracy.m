@@ -8,4 +8,3 @@ Accuracy = [];
     end
 plot(Accuracy);
 end
-
