@@ -5,6 +5,5 @@ function [ indexImage] = decision( img,descripteurs )
     delta = d-descripteurs;
     norme = diag(delta*delta');
     [res,indexImage] = min(norme);
-
 end
 

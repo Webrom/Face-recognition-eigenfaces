@@ -1,6 +1,6 @@
 function LancerTest1()
     %Choisir la personne que l'on veut tester
-    folderNumber = 23;
+    folderNumber = 21;
     %Choisir la photo de la personne
     imgNumber = 6;
     path = './att_faces/s';
